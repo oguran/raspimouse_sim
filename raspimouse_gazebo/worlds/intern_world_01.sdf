@@ -9,7 +9,14 @@
       filename="ignition-gazebo-physics-system"
       name="ignition::gazebo::systems::Physics">
     </plugin>
+<!--
     <plugin
+      filename="ignition-gazebo-sensors-system"
+      name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+-->
+     <plugin
       filename="ignition-gazebo-user-commands-system"
       name="ignition::gazebo::systems::UserCommands">
     </plugin>
@@ -36,5 +43,175 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/warehouse
       </uri>
     </include>
+
+    <model name="Gray_Wall_1">
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Grey%20Wall
+      </uri>
+      <pose>0 -3.0 0 0 0 0</pose>
+    </include>
+    </model>
+
+    <model name="Gray_Wall_2">
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Grey%20Wall
+      </uri>
+      <pose>0 3.0 0 0 0 0</pose>
+    </include>
+    </model>
+
+    <model name="Gray_Wall_3">
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Grey%20Wall
+      </uri>
+      <pose>4.0 0 0 0 0 1.57</pose>
+    </include>
+    </model>
+
+    <model name="Gray_Wall_4">
+    <include>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Grey%20Wall
+      </uri>
+      <pose>-4.0 0 0 0 0 1.57</pose>
+    </include>
+    </model>
+
+    <model name="black_cube00">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-2.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube01">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-2.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube02">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-2.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube03">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-2.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube11">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-1.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube12">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-1.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube13">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-1.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube21">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-0.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube22">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-0.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube23">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>-0.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube31">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>0.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube32">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>0.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube33">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>0.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube41">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>1.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube42">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>1.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube43">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>1.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube51">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>2.5 0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube52">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>2.5 1.0 0.075 0 0 0</pose>
+    </model>
+
+    <model name="black_cube53">
+      <include>
+        <uri>model://cube_30cm_black</uri>
+      </include>
+      <pose>2.5 -1.0 0.075 0 0 0</pose>
+    </model>
+
   </world>
 </sdf>
